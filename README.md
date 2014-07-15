@@ -21,6 +21,7 @@ You will need LLVM 3.0 or later in order to build PNChart.
 
 ### Copy the PDChart folder to your project
 
+![lineChart][2]
 
 ```swift
 //for lineChart
@@ -33,13 +34,15 @@ dataItem.yInterval = 10.0
 dataItem.pointArray = [CGPoint(x: 1.0, y: 95.0), CGPoint(x: 2.0, y: 25.0), CGPoint(x: 3.0, y: 30.0), CGPoint(x: 4.0, y:50.0), CGPoint(x: 5.0, y: 55.0), CGPoint(x: 6.0, y: 60.0), CGPoint(x: 7.0, y: 90.0)]
 dataItem.xAxesDegreeTexts = ["周日", "一", "二", "三", "四", "五", "周六"]
 dataItem.yAxesDegreeTexts = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
-        
+
 var lineChart: PDLineChart = PDLineChart(frame: CGRectMake(0, 100, 320, 320), dataItem: dataItem)
 
 self.view.addSubview(lineChart)
 lineChart.strokeChart()
 
 ```
+
+![barChart][3]
 
 ```swift
 //for barChart
@@ -52,13 +55,15 @@ dataItem.yInterval = 10.0
 dataItem.barPointArray = [CGPoint(x: 1.0, y: 95.0), CGPoint(x: 2.0, y: 25.0), CGPoint(x: 3.0, y: 30.0), CGPoint(x: 4.0, y:50.0), CGPoint(x: 5.0, y: 55.0), CGPoint(x: 6.0, y: 60.0), CGPoint(x: 7.0, y: 90.0)]
 dataItem.xAxesDegreeTexts = ["周日", "一", "二", "三", "四", "五", "周六"]
 dataItem.yAxesDegreeTexts = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
-        
+
 var barChart: PDBarChart = PDBarChart(frame: CGRectMake(0, 100, 320, 320), dataItem: dataItem)
 
 self.view.addSubview(barChart)
 barChart.addSubview(barChart)
 
 ```
+
+![pieChart][4]
 
 ```swift
 //for pieChart
@@ -67,8 +72,8 @@ var dataItem: PDPieChartDataItem = PDPieChartDataItem()
 dataItem.pieWidth = 80
 dataItem.pieMargin = 50
 dataItem.dataArray = [PieDataItem(description: "first pie", color: lightGreen, percentage: 0.3),
-                      PieDataItem(description: nil, color: middleGreen, percentage: 0.1),
-                      PieDataItem(description: "third pie", color: deepGreen, percentage: 0.6)]
+PieDataItem(description: nil, color: middleGreen, percentage: 0.1),
+PieDataItem(description: "third pie", color: deepGreen, percentage: 0.6)]
 var pieChart: PDPieChart = PDPieChart(frame: CGRectMake(0, 100, 320, 320), dataItem: dataItem)
 ```
 
@@ -80,4 +85,7 @@ This code is distributed under the terms and conditions of the [MIT license](LIC
 [@kevinzhow](https://github.com/kevinzhow/PNChart/)  PNChart
 
 
-  [1]: https://github.com/PandaraWen/PDChart/blob/master/readme_resource/PDChartDemo.gif
+[1]: http://hte4mj-resource.stor.sinaapp.com/pdchart/PDChartDemo.gif
+[2]: http://hte4mj-resource.stor.sinaapp.com/pdchart/lineChart.png
+[3]: http://hte4mj-resource.stor.sinaapp.com/pdchart/barChart.png
+[4]: http://hte4mj-resource.stor.sinaapp.com/pdchart/pieChart.png
