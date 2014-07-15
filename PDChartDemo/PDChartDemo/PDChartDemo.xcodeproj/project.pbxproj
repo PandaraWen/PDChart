@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8427E4D41974C52C006CF8C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E4D31974C52C006CF8C6 /* AppDelegate.swift */; };
+		8427E4DB1974C52C006CF8C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8427E4DA1974C52C006CF8C6 /* Images.xcassets */; };
+		8427E4E71974C52C006CF8C6 /* PDChartDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E4E61974C52C006CF8C6 /* PDChartDemoTests.swift */; };
+		8427E4F21974C588006CF8C6 /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E4F11974C588006CF8C6 /* Define.swift */; };
+		8427E4F61974C5F6006CF8C6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E4F41974C5F6006CF8C6 /* MainViewController.swift */; };
+		8427E4F71974C5F6006CF8C6 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427E4F51974C5F6006CF8C6 /* MainViewController.xib */; };
+		8427E5021974C5FD006CF8C6 /* PDBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E4FA1974C5FD006CF8C6 /* PDBarChart.swift */; };
+		8427E5031974C5FD006CF8C6 /* PDChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E4FB1974C5FD006CF8C6 /* PDChart.swift */; };
+		8427E5041974C5FD006CF8C6 /* PDChartAxesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E4FD1974C5FD006CF8C6 /* PDChartAxesComponent.swift */; };
+		8427E5051974C5FD006CF8C6 /* PDLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E4FF1974C5FD006CF8C6 /* PDLineChart.swift */; };
+		8427E5061974C5FD006CF8C6 /* PDPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8427E5011974C5FD006CF8C6 /* PDPieChart.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8427E4E11974C52C006CF8C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8427E4C61974C52C006CF8C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8427E4CD1974C52C006CF8C6;
+			remoteInfo = PDChartDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8427E4CE1974C52C006CF8C6 /* PDChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8427E4D21974C52C006CF8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8427E4D31974C52C006CF8C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8427E4DA1974C52C006CF8C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8427E4E01974C52C006CF8C6 /* PDChartDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDChartDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8427E4E51974C52C006CF8C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8427E4E61974C52C006CF8C6 /* PDChartDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDChartDemoTests.swift; sourceTree = "<group>"; };
+		8427E4F11974C588006CF8C6 /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Define.swift; path = Common/Define.swift; sourceTree = "<group>"; };
+		8427E4F41974C5F6006CF8C6 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = MainViewController/MainViewController.swift; sourceTree = "<group>"; };
+		8427E4F51974C5F6006CF8C6 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = MainViewController/MainViewController.xib; sourceTree = "<group>"; };
+		8427E4FA1974C5FD006CF8C6 /* PDBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDBarChart.swift; path = PDBarChart/PDBarChart.swift; sourceTree = "<group>"; };
+		8427E4FB1974C5FD006CF8C6 /* PDChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDChart.swift; sourceTree = "<group>"; };
+		8427E4FD1974C5FD006CF8C6 /* PDChartAxesComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDChartAxesComponent.swift; sourceTree = "<group>"; };
+		8427E4FF1974C5FD006CF8C6 /* PDLineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDLineChart.swift; path = PDLineChart/PDLineChart.swift; sourceTree = "<group>"; };
+		8427E5011974C5FD006CF8C6 /* PDPieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PDPieChart.swift; path = PDPieChart/PDPieChart.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8427E4CB1974C52C006CF8C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8427E4DD1974C52C006CF8C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8427E4C51974C52C006CF8C6 = {
+			isa = PBXGroup;
+			children = (
+				8427E4D01974C52C006CF8C6 /* PDChartDemo */,
+				8427E4E31974C52C006CF8C6 /* PDChartDemoTests */,
+				8427E4CF1974C52C006CF8C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8427E4CF1974C52C006CF8C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4CE1974C52C006CF8C6 /* PDChartDemo.app */,
+				8427E4E01974C52C006CF8C6 /* PDChartDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8427E4D01974C52C006CF8C6 /* PDChartDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4F81974C5FD006CF8C6 /* PDChart */,
+				8427E4F31974C597006CF8C6 /* MainViewController */,
+				8427E4F01974C570006CF8C6 /* Common */,
+				8427E4D31974C52C006CF8C6 /* AppDelegate.swift */,
+				8427E4DA1974C52C006CF8C6 /* Images.xcassets */,
+				8427E4D11974C52C006CF8C6 /* Supporting Files */,
+			);
+			path = PDChartDemo;
+			sourceTree = "<group>";
+		};
+		8427E4D11974C52C006CF8C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4D21974C52C006CF8C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8427E4E31974C52C006CF8C6 /* PDChartDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4E61974C52C006CF8C6 /* PDChartDemoTests.swift */,
+				8427E4E41974C52C006CF8C6 /* Supporting Files */,
+			);
+			path = PDChartDemoTests;
+			sourceTree = "<group>";
+		};
+		8427E4E41974C52C006CF8C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4E51974C52C006CF8C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8427E4F01974C570006CF8C6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4F11974C588006CF8C6 /* Define.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		8427E4F31974C597006CF8C6 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4F41974C5F6006CF8C6 /* MainViewController.swift */,
+				8427E4F51974C5F6006CF8C6 /* MainViewController.xib */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		8427E4F81974C5FD006CF8C6 /* PDChart */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4FC1974C5FD006CF8C6 /* PDChartComponent */,
+				8427E5011974C5FD006CF8C6 /* PDPieChart.swift */,
+				8427E4FF1974C5FD006CF8C6 /* PDLineChart.swift */,
+				8427E4FA1974C5FD006CF8C6 /* PDBarChart.swift */,
+				8427E4FB1974C5FD006CF8C6 /* PDChart.swift */,
+			);
+			path = PDChart;
+			sourceTree = "<group>";
+		};
+		8427E4FC1974C5FD006CF8C6 /* PDChartComponent */ = {
+			isa = PBXGroup;
+			children = (
+				8427E4FD1974C5FD006CF8C6 /* PDChartAxesComponent.swift */,
+			);
+			path = PDChartComponent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8427E4CD1974C52C006CF8C6 /* PDChartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8427E4EA1974C52C006CF8C6 /* Build configuration list for PBXNativeTarget "PDChartDemo" */;
+			buildPhases = (
+				8427E4CA1974C52C006CF8C6 /* Sources */,
+				8427E4CB1974C52C006CF8C6 /* Frameworks */,
+				8427E4CC1974C52C006CF8C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDChartDemo;
+			productName = PDChartDemo;
+			productReference = 8427E4CE1974C52C006CF8C6 /* PDChartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8427E4DF1974C52C006CF8C6 /* PDChartDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8427E4ED1974C52C006CF8C6 /* Build configuration list for PBXNativeTarget "PDChartDemoTests" */;
+			buildPhases = (
+				8427E4DC1974C52C006CF8C6 /* Sources */,
+				8427E4DD1974C52C006CF8C6 /* Frameworks */,
+				8427E4DE1974C52C006CF8C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8427E4E21974C52C006CF8C6 /* PBXTargetDependency */,
+			);
+			name = PDChartDemoTests;
+			productName = PDChartDemoTests;
+			productReference = 8427E4E01974C52C006CF8C6 /* PDChartDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8427E4C61974C52C006CF8C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Pandara;
+				TargetAttributes = {
+					8427E4CD1974C52C006CF8C6 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					8427E4DF1974C52C006CF8C6 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 8427E4CD1974C52C006CF8C6;
+					};
+				};
+			};
+			buildConfigurationList = 8427E4C91974C52C006CF8C6 /* Build configuration list for PBXProject "PDChartDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8427E4C51974C52C006CF8C6;
+			productRefGroup = 8427E4CF1974C52C006CF8C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8427E4CD1974C52C006CF8C6 /* PDChartDemo */,
+				8427E4DF1974C52C006CF8C6 /* PDChartDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8427E4CC1974C52C006CF8C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8427E4DB1974C52C006CF8C6 /* Images.xcassets in Resources */,
+				8427E4F71974C5F6006CF8C6 /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8427E4DE1974C52C006CF8C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8427E4CA1974C52C006CF8C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8427E4F61974C5F6006CF8C6 /* MainViewController.swift in Sources */,
+				8427E5041974C5FD006CF8C6 /* PDChartAxesComponent.swift in Sources */,
+				8427E4F21974C588006CF8C6 /* Define.swift in Sources */,
+				8427E5021974C5FD006CF8C6 /* PDBarChart.swift in Sources */,
+				8427E5031974C5FD006CF8C6 /* PDChart.swift in Sources */,
+				8427E4D41974C52C006CF8C6 /* AppDelegate.swift in Sources */,
+				8427E5051974C5FD006CF8C6 /* PDLineChart.swift in Sources */,
+				8427E5061974C5FD006CF8C6 /* PDPieChart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8427E4DC1974C52C006CF8C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8427E4E71974C52C006CF8C6 /* PDChartDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8427E4E21974C52C006CF8C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8427E4CD1974C52C006CF8C6 /* PDChartDemo */;
+			targetProxy = 8427E4E11974C52C006CF8C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8427E4E81974C52C006CF8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8427E4E91974C52C006CF8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8427E4EB1974C52C006CF8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = PDChartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8427E4EC1974C52C006CF8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = PDChartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8427E4EE1974C52C006CF8C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PDChartDemo.app/PDChartDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PDChartDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		8427E4EF1974C52C006CF8C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PDChartDemo.app/PDChartDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PDChartDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8427E4C91974C52C006CF8C6 /* Build configuration list for PBXProject "PDChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8427E4E81974C52C006CF8C6 /* Debug */,
+				8427E4E91974C52C006CF8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8427E4EA1974C52C006CF8C6 /* Build configuration list for PBXNativeTarget "PDChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8427E4EB1974C52C006CF8C6 /* Debug */,
+				8427E4EC1974C52C006CF8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8427E4ED1974C52C006CF8C6 /* Build configuration list for PBXNativeTarget "PDChartDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8427E4EE1974C52C006CF8C6 /* Debug */,
+				8427E4EF1974C52C006CF8C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8427E4C61974C52C006CF8C6 /* Project object */;
+}
