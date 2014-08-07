@@ -23,7 +23,7 @@ class PDPieChartDataItem {
     //optional
     var animationDur: CGFloat = 1.0
     var clockWise: Bool = true
-    var chartStartAngle: CGFloat = -M_PI / 2
+    var chartStartAngle: CGFloat = CGFloat(-M_PI / 2)
     var pieTipFontSize: CGFloat = 20.0
     var pieTipTextColor: UIColor = UIColor.whiteColor()
     var pieMargin: CGFloat = 0
@@ -83,12 +83,12 @@ class PDPieChart: PDChart {
         for var i = 0; i < self.dataItem.dataArray.count; i++ {
             //data
             var dataItem: PieDataItem = self.dataItem.dataArray[i]
-            var startAngle: CGFloat = M_PI * 2 * totalPercentage + self.dataItem.chartStartAngle
-            var endAngle: CGFloat = startAngle + dataItem.percentage * M_PI * 2
+            var startAngle: CGFloat = CGFloat(M_PI * 2.0) * totalPercentage + self.dataItem.chartStartAngle
+            var endAngle: CGFloat = startAngle + dataItem.percentage * CGFloat(M_PI * 2)
             
             //pie center point
             var sign: Int = self.dataItem.clockWise ? -1 : 1
-            var angle: Float = Float(dataItem.percentage * M_PI * 2) / 2 + Float(totalPercentage * M_PI * 2)
+            var angle: Float = Float(dataItem.percentage) * Float(M_PI) * Float(2.0) / 2.0 + Float(totalPercentage) * Float(M_PI * 2.0)
             
             var pieCenterPointX: CGFloat = center.x + radius * CGFloat(sinf(angle))
             var pieCenterPointY: CGFloat = center.y - radius * CGFloat(cosf(angle))
@@ -103,12 +103,16 @@ class PDPieChart: PDChart {
         }
         
         //mask
-        var maskLayer: CAShapeLayer = self.getShapeLayerWithARCPath(UIColor.whiteColor(), lineWidth: self.dataItem.pieWidth, center: CGPoint(x: self.frame.size.width / 2, y: self.frame.size.height / 2), radius: self.frame.size.width / 2 - self.dataItem.pieMargin - self.dataItem.pieWidth / 2, startAngle: -M_PI / 2, endAngle: M_PI * 2 - M_PI / 2, clockWise: true)
+        var maskCenter: CGPoint = CGPointMake(self.frame.size.width / 2.0, self.frame.size.height / 2)
+        var maskRadius: CGFloat = self.frame.size.width / 2 - self.dataItem.pieMargin - self.dataItem.pieWidth / 2
+        var maskStartAngle: CGFloat = -CGFloat(M_PI) / 2
+        var maskEndAngle: CGFloat = CGFloat(M_PI) * 2 - CGFloat(M_PI) / 2
+        var maskLayer: CAShapeLayer = self.getShapeLayerWithARCPath(UIColor.whiteColor(), lineWidth: self.dataItem.pieWidth, center: maskCenter, radius: maskRadius, startAngle: maskStartAngle, endAngle: maskEndAngle, clockWise: true)
         maskLayer.strokeStart = 0.0
         maskLayer.strokeEnd = 1.0
         
         var animation: CABasicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.duration = self.dataItem.animationDur
+        animation.duration = CFTimeInterval(self.dataItem.animationDur)
         animation.fromValue = 0.0
         animation.toValue = 1.0
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
@@ -136,7 +140,7 @@ class PDPieChart: PDChart {
             pieTipLabel.alpha = 0.0
             pieTipLabel.center = pieCenterPointArray[i]
             
-            UIView.animateWithDuration(0.5, delay: self.dataItem.animationDur, options: UIViewAnimationOptions.CurveEaseInOut, animations:{
+            UIView.animateWithDuration(0.5, delay: NSTimeInterval(self.dataItem.animationDur), options: UIViewAnimationOptions.CurveEaseInOut, animations:{
                     () -> Void in
                     pieTipLabel.alpha = 1.0
                 }, completion: {
