@@ -5,7 +5,7 @@ A simple and beautiful chart lib for iOS, developed in Swift，refering to [PNCh
 
 ## Requirements
 
-PDChart works on iOS 8.0 and later version. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
+PDChart works on iOS 7.0 and later version. It depends on the following Apple frameworks, which should already be included with most Xcode templates:
 
 * Foundation.framework
 * UIKit.framework

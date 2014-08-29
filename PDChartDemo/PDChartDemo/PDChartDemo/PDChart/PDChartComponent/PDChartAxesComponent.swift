@@ -48,7 +48,7 @@ class PDChartAxesComponentDataItem: NSObject {
     var degreeTipMarginHorizon: CGFloat = 5.0
     var degreeTipMarginVertical: CGFloat = 5.0
     
-    init() {
+    override init() {
         
     }
 }
@@ -196,7 +196,7 @@ class PDChartAxesComponent: NSObject {
             
             //axes tips------------------------------------
             //func getXAxesDegreeTipLabel(tipText: String, frame: CGRect, fontSize: CGFloat) -> UILabel {
-            if dataItem.xAxesDegreeTexts {
+            if (dataItem.xAxesDegreeTexts != nil) {
                 for var i = 0; i < dataItem.xAxesDegreeTexts!.count; i++ {
                     var size: CGSize = CGSize(width: xDegreeInterval - dataItem.degreeTipMarginHorizon * 2, height: dataItem.degreeTipFontSize)
                     var center: CGPoint = CGPoint(x: basePoint.x + xDegreeInterval * CGFloat(i + 1), y: basePoint.y + dataItem.degreeTipMarginVertical + size.height / 2)
@@ -212,7 +212,7 @@ class PDChartAxesComponent: NSObject {
                 }
             }
             
-            if dataItem.yAxesDegreeTexts {
+            if (dataItem.yAxesDegreeTexts != nil) {
                 for var i = 0; i < dataItem.yAxesDegreeTexts!.count; i++ {
                     var size: CGSize = CGSize(width: dataItem.xAxesLeftMargin - dataItem.degreeTipMarginHorizon * 2, height: dataItem.degreeTipFontSize)
                     var center: CGPoint = CGPoint(x: dataItem.xAxesLeftMargin / 2, y: basePoint.y - yDegreeInterval * CGFloat(i + 1))
