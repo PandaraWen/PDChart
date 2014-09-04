@@ -44,13 +44,17 @@ class PDPieChart: PDChart {
         super.init(frame: frame)
         self.dataItem = dataItem
     }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     func getShapeLayerWithARCPath(color: UIColor?, lineWidth: CGFloat, center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockWise: Bool) -> CAShapeLayer {
         //layer
         var pathLayer: CAShapeLayer = CAShapeLayer()
         pathLayer.lineCap = kCALineCapButt
         pathLayer.fillColor = UIColor.clearColor().CGColor
-        if color {
+        if (color != nil) {
             pathLayer.strokeColor = color!.CGColor
         }
         pathLayer.lineWidth = self.dataItem.pieWidth
@@ -131,7 +135,7 @@ class PDPieChart: PDChart {
             pieTipLabel.backgroundColor = UIColor.clearColor();
             pieTipLabel.font = UIFont.systemFontOfSize(self.dataItem.pieTipFontSize)
             pieTipLabel.textColor = self.dataItem.pieTipTextColor
-            if dataItem.description {
+            if (dataItem.description != nil) {
                 pieTipLabel.text = dataItem.description
             } else {
                 pieTipLabel.text = "\(dataItem.percentage * 100)%"

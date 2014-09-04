@@ -78,6 +78,10 @@ class PDBarChart: PDChart {
         self.addBarBackgroundView()
     }
 
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     func getFeatureWidth() -> CGFloat {
         return CGFloat(self.frame.size.width)
     }
@@ -153,7 +157,7 @@ class PDBarChart: PDChart {
     }
     
     override func strokeChart()  {
-        if !self.dataItem.barPointArray {
+        if !(self.dataItem.barPointArray != nil) {
             return
         }
         
