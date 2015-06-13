@@ -1,6 +1,6 @@
 # PDChart - Chart lib for iOS in Swift
----
-A simple and beautiful chart lib for iOS, developed in Swift，refering to [PNChart](https://github.com/kevinzhow/PNChart/)
+
+A simple and beautiful chart library for iOS, developed in Swift，refering to [PNChart](https://github.com/kevinzhow/PNChart/)
 
 ## Requirements
 
