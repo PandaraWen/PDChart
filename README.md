@@ -19,9 +19,9 @@ You will need LLVM 3.0 or later in order to build PNChart.
 #### lineChart
 ![alt tag](https://raw.githubusercontent.com/yizhiheng/PDChart/master/Screenshots/line.png)
 #### barChart
-![alt tag](https://github.com/yizhiheng/PDChart/master/Screenshots/bar.png)
+![alt tag](https://raw.githubusercontent.com/yizhiheng/PDChart/master/Screenshots/bar.png)
 #### pieChart
-![alt tag](https://github.com/yizhiheng/PDChart/master/Screenshots/pie.png)
+![alt tag](https://raw.githubusercontent.com/yizhiheng/PDChart/master/Screenshots/pie.png)
 
 ## Usage
 
@@ -37,7 +37,7 @@ dataItem.xInterval = 1.0
 dataItem.yMax = 100.0
 dataItem.yInterval = 10.0
 dataItem.pointArray = [CGPoint(x: 1.0, y: 95.0), CGPoint(x: 2.0, y: 25.0), CGPoint(x: 3.0, y: 30.0), CGPoint(x: 4.0, y:50.0), CGPoint(x: 5.0, y: 55.0), CGPoint(x: 6.0, y: 60.0), CGPoint(x: 7.0, y: 90.0)]
-dataItem.xAxesDegreeTexts = ["周日", "一", "二", "三", "四", "五", "周六"]
+dataItem.xAxesDegreeTexts = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
 dataItem.yAxesDegreeTexts = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
 
 var lineChart: PDLineChart = PDLineChart(frame: CGRectMake(0, 100, 320, 320), dataItem: dataItem)
@@ -56,7 +56,7 @@ dataItem.xInterval = 1.0
 dataItem.yMax = 100.0
 dataItem.yInterval = 10.0
 dataItem.barPointArray = [CGPoint(x: 1.0, y: 95.0), CGPoint(x: 2.0, y: 25.0), CGPoint(x: 3.0, y: 30.0), CGPoint(x: 4.0, y:50.0), CGPoint(x: 5.0, y: 55.0), CGPoint(x: 6.0, y: 60.0), CGPoint(x: 7.0, y: 90.0)]
-dataItem.xAxesDegreeTexts = ["周日", "一", "二", "三", "四", "五", "周六"]
+dataItem.xAxesDegreeTexts = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
 dataItem.yAxesDegreeTexts = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
 
 var barChart: PDBarChart = PDBarChart(frame: CGRectMake(0, 100, 320, 320), dataItem: dataItem)
