@@ -17,7 +17,7 @@ You will need LLVM 3.0 or later in order to build PNChart.
 
 ## Screenshots
 #### lineChart
-![alt tag](https://github.com/yizhiheng/PDChart/master/Screenshots/line.png)
+![alt tag](https://raw.githubusercontent.com/yizhiheng/PDChart/master/Screenshots/line.png)
 #### barChart
 ![alt tag](https://github.com/yizhiheng/PDChart/master/Screenshots/bar.png)
 #### pieChart
