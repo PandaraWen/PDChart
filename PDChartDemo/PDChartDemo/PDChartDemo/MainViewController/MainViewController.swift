@@ -37,31 +37,31 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     //UITableViewDataSource UITableViewDataDelegate
-    func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
-    func tableView(tableView: UITableView!, heightForRowAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 30.0
     }
     
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        var cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell!
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell: UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell!
         if !(cell != nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
         }
         
         switch indexPath.row {
         case 0:
-            cell.textLabel.text = "折线图 - line chart"
+            cell.textLabel!.text = "line chart"
         case 1:
-            cell.textLabel.text = "饼状图 - pie chart"
+            cell.textLabel!.text = "pie chart"
         case 2:
-            cell.textLabel.text = "柱状图 - bar chart"
+            cell.textLabel!.text = "bar chart"
         default:
             break
         }
@@ -69,7 +69,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         var viewCon: UIViewController = UIViewController()
         viewCon.view.backgroundColor = UIColor.whiteColor()
         
@@ -94,7 +94,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         chart.strokeChart()
         
-        self.navigationController.pushViewController(viewCon, animated: true)
+        self.navigationController!.pushViewController(viewCon, animated: true)
     }
     
     func getLineChart() -> PDLineChart {
@@ -104,7 +104,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         dataItem.yMax = 100.0
         dataItem.yInterval = 10.0
         dataItem.pointArray = [CGPoint(x: 1.0, y: 95.0), CGPoint(x: 2.0, y: 25.0), CGPoint(x: 3.0, y: 30.0), CGPoint(x: 4.0, y:50.0), CGPoint(x: 5.0, y: 55.0), CGPoint(x: 6.0, y: 60.0), CGPoint(x: 7.0, y: 90.0)]
-        dataItem.xAxesDegreeTexts = ["周日", "一", "二", "三", "四", "五", "周六"]
+        dataItem.xAxesDegreeTexts = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
         dataItem.yAxesDegreeTexts = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
         
         var lineChart: PDLineChart = PDLineChart(frame: CGRectMake(0, 100, 320, 320), dataItem: dataItem)
@@ -129,7 +129,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         dataItem.yMax = 100.0
         dataItem.yInterval = 10.0
         dataItem.barPointArray = [CGPoint(x: 1.0, y: 95.0), CGPoint(x: 2.0, y: 25.0), CGPoint(x: 3.0, y: 30.0), CGPoint(x: 4.0, y:50.0), CGPoint(x: 5.0, y: 55.0), CGPoint(x: 6.0, y: 60.0), CGPoint(x: 7.0, y: 90.0)]
-        dataItem.xAxesDegreeTexts = ["周日", "一", "二", "三", "四", "五", "周六"]
+        dataItem.xAxesDegreeTexts = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
         dataItem.yAxesDegreeTexts = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
         
         var barChart: PDBarChart = PDBarChart(frame: CGRectMake(0, 100, 320, 320), dataItem: dataItem)
