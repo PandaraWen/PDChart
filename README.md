@@ -15,13 +15,18 @@ PDChart works on iOS 7.0 and later version. It depends on the following Apple fr
 You will need LLVM 3.0 or later in order to build PNChart.
 
 
-
+## Screenshots
+#### lineChart
+![alt tag](https://github.com/yizhiheng/PDChart/master/Screenshots/line.png)
+#### barChart
+![alt tag](https://github.com/yizhiheng/PDChart/master/Screenshots/bar.png)
+#### pieChart
+![alt tag](https://github.com/yizhiheng/PDChart/master/Screenshots/pie.png)
 
 ## Usage
 
 ### Copy the PDChart folder to your project
 
-![lineChart][2]
 
 ```swift
 //for lineChart
@@ -42,8 +47,6 @@ lineChart.strokeChart()
 
 ```
 
-![barChart][3]
-
 ```swift
 //for barChart
 
@@ -62,8 +65,6 @@ self.view.addSubview(barChart)
 barChart.addSubview(barChart)
 
 ```
-
-![pieChart][4]
 
 ```swift
 //for pieChart
