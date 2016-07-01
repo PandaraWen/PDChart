@@ -90,6 +90,6 @@ This code is distributed under the terms and conditions of the [MIT license](LIC
 
 
 [1]: http://o97h12868.bkt.clouddn.com/PDChart/pdchart.gif
-[2]: http://o97h12868.bkt.clouddn.com/PDChart/line_chart.png
-[3]: http://o97h12868.bkt.clouddn.com/PDChart/bar_chart.png
-[4]: http://o97h12868.bkt.clouddn.com/PDChart/pie_chart.png
+[2]: http://o97h12868.bkt.clouddn.com/PDChart/line_chart.png?imageView2/2/w/375
+[3]: http://o97h12868.bkt.clouddn.com/PDChart/bar_chart.png?imageView2/2/w/375
+[4]: http://o97h12868.bkt.clouddn.com/PDChart/pie_chart.png?imageView2/2/w/375
