@@ -1,7 +1,11 @@
 # PDChart - Chart lib for iOS in Swift
 ---
 A simple and beautiful chart lib for iOS, developed in Swift，refering to [PNChart](https://github.com/kevinzhow/PNChart/)
+
+**Recently updated to support Swift2.2**
+
 ![PDChartDemo][1]
+
 
 ## Requirements
 
@@ -12,7 +16,7 @@ PDChart works on iOS 7.0 and later version. It depends on the following Apple fr
 * CoreGraphics.framework
 * QuartzCore.framework
 
-You will need LLVM 3.0 or later in order to build PNChart.
+You will need LLVM 3.0 or later in order to build PDChart.
 
 
 
@@ -85,7 +89,7 @@ This code is distributed under the terms and conditions of the [MIT license](LIC
 [@kevinzhow](https://github.com/kevinzhow/PNChart/)  PNChart
 
 
-[1]: http://hte4mj-resource.stor.sinaapp.com/pdchart/PDChartDemo.gif
-[2]: http://hte4mj-resource.stor.sinaapp.com/pdchart/lineChart.png
-[3]: http://hte4mj-resource.stor.sinaapp.com/pdchart/barChart.png
-[4]: http://hte4mj-resource.stor.sinaapp.com/pdchart/pieChart.png
+[1]: http://o97h12868.bkt.clouddn.com/PDChart/pdchart.gif
+[2]: http://o97h12868.bkt.clouddn.com/PDChart/line_chart.png
+[3]: http://o97h12868.bkt.clouddn.com/PDChart/bar_chart.png
+[4]: http://o97h12868.bkt.clouddn.com/PDChart/pie_chart.png
